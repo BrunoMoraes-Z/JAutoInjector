@@ -27,6 +27,6 @@ jobs:
 
       - name: Publish package
         if: success()
-        run: mvn clean deploy
+        run: mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}

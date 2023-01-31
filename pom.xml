@@ -4,11 +4,10 @@
 
     <groupId>com.bruno</groupId>
     <artifactId>jautoinjector</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>JAutoInjector</name>
-    <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
