@@ -17,10 +17,13 @@ jobs:
         with:
           java-version: 11.0.15
           distribution: microsoft
+          
+      - name: Setup Maven
+        uses: stCarolas/setup-maven@v.4.5
 
       - name: Build and Test
         run: |
-          ./mvnw clean install
+          mvn clean install
 
       - name: Publish package
         if: success()
