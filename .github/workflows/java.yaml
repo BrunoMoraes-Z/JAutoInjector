@@ -1,0 +1,28 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: 14
+
+      - name: Build and Test
+        run: |
+          ./mvnw clean install
+
+      - name: Publish package
+        if: success()
+        run: mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
