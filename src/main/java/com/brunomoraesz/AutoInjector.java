@@ -1,4 +1,4 @@
-package com.bruno;
+package com.brunomoraesz;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

@@ -1,4 +1,4 @@
-package com.bruno;
+package com.brunomoraesz;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
